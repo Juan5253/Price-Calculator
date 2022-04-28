@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./src/images/icon.ico">
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="./src/js/main.js"></script>
     <title>Price Calculator</title>
@@ -11,11 +15,11 @@
 <body>
     <header class="main__header">
         <figure>
-            <img src="" alt="BannerIcon">
+            <img src="./src/images/bannerlogo.png" alt="BannerIcon">
         </figure>
         <section class="main__header_item">
-            <h1>Price Calculator</h1>
-            <span>description how use the site</span> 
+            <h1 id="header_title">Price Calculator</h1>
+            <span id="header_subtitle">Calculate the final price of any product you want</span> 
         </section>
     </header>
     <main class="main__content">
@@ -49,6 +53,10 @@
             <p id="discountValueResult">The discount value is: </p>
             <p id="priceWithDiscountResult"> The price with discount is: </p>
             <p id="couponValue">The coupon you was enter is: </p>
+            <details>
+                <summary>How i use</summary>
+                <p> in first step you need to put price value and inicial discount</p>
+            </details>
         </aside>
     </main>
     <footer class="main__footer">
