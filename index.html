@@ -36,23 +36,22 @@
             <section id="content_form">
                 <form action="">
                     <label for="inputPrice">Enter the price of product</label>
-                    <input type="number"/>
+                    <input type="number" name="" id="inputPrice"/>
                     <br>
                     <label for="inputDiscount">Discount value</label>
-                    <input type="number"/>
+                    <input type="number" name="" id="inputDiscount"/>
                     <br>
                     <label for="inputCoupon">Enter the coupon</label>
-                    <input type="text"/>
+                    <input type="text" name="" id="inputCoupon"/>
                     <br>
-                    <button type="button">Calculate Final Price</button>
+                    <button type="button" onclick="onClickButtonPriceDiscount()">Calculate</button>
                 </form>
             </section>
         </section>
         <aside class="main__content_item">
-            <p id="priceValueResult">The price of product is:  </p>
-            <p id="discountValueResult">The discount value is: </p>
-            <p id="priceWithDiscountResult"> The price with discount is: </p>
-            <p id="couponValue">The coupon you was enter is: </p>
+            <p id="priceValueResult"></p>
+            <p id="discountValueResult"></p>
+            <p id="finalPriceResult"></p>
             <details>
                 <summary>How i use</summary>
                 <p> in first step you need to put price value and inicial discount</p>
