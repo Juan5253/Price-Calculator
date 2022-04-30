@@ -11,6 +11,7 @@ html
 .main__header
 {
     display: flex;
+    padding: 1rem 0 ;
     margin: 2rem 2rem 1rem;
     border-radius: 1rem;
     box-shadow: 8px 11px 10px -6px rgba(0,0,0,0.94);
@@ -20,13 +21,13 @@ html
 }
 .main__header img
 {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 5rem;
+    max-height: 5rem;
 }
 .main__header_item
 {
     color: #4A4A48;
-    padding-left: 4%;
+    padding-left: 1%;
     font-size: 2.5rem;
     font-family:'Bebas Neue', cursive;
     line-height: 120%;
@@ -58,15 +59,26 @@ html
     padding: 1rem 2rem;
     margin: 1rem 2rem;
 }
-.main__content aside
+.main__content aside{
+    margin-left: 0;    
+}
+.main__content_item p
 {
-    margin-left: 0;
+    display: grid;
+    min-height: 8rem;
+    background-color: black;
+    border: 5px solid #494947;
+    border-radius: 1rem;
+    color: rgb(44, 250, 2);
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    align-items: center;
 }
 .main__content_item img
 {
     padding: 1rem;
-    max-width:350px;
-    max-height: 425px;
+    max-width:150px;
+    max-height: 200px;
 }
 #content_form
 {
@@ -85,6 +97,7 @@ html
     padding: 0.8rem;
     margin-top:0.5rem;
 }
+/*FOOTER*/
 .main__footer
 {
     font-size: large;

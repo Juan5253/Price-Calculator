@@ -34,7 +34,7 @@ function calculateFinalPrice(price, discount, couponValue)
     //second step, the const userCoupon check the parameter couponValue already exists in the Coupons object.
     const userCoupon = coupons.find(isCouponValueValid);
     if (!userCoupon) {
-        alert("El cupón " + couponValue + " no es válido");
+        alert("The coupon " + couponValue + " does not exist in the database");
         totalDiscount = discount;
     }
     else {
@@ -42,7 +42,7 @@ function calculateFinalPrice(price, discount, couponValue)
         totalDiscount = discount+couponDiscount;
     }
 
-    return calculatePriceWithDiscount(price, totalDiscount) + " el descuento total es: " + totalDiscount;
+    return calculatePriceWithDiscount(price, totalDiscount);
 }
 function onClickButtonPriceDiscount()
 {
@@ -54,13 +54,16 @@ function onClickButtonPriceDiscount()
     const couponValue = inputCoupon.value;
 
     const price = calculatePriceWithDiscount(priceValue, discountValue);
+    const priceFixed = price.toFixed(2);
     const discount = calculateDiscountValue(priceValue, discountValue);
+    const discountFixed = discount.toFixed(2);
     const finalPrice = calculateFinalPrice(priceValue, discountValue, couponValue);
+    const finalPriceFixed = finalPrice.toFixed(2);
     
     const priceValueResult = document.getElementById("priceValueResult");
-    priceValueResult.innerText = "El precio del producto con descuento es de: " + price;
+    priceValueResult.innerText = "$ " + priceFixed;
     const discountValueResult = document.getElementById("discountValueResult"); 
-    discountValueResult.innerText = "El valor del descuento es de: " + discount;
+    discountValueResult.innerText = "$ " + discountFixed;
     const finalValueResult = document.getElementById("finalPriceResult");
-    finalValueResult.innerText = "El valor final es de: " + finalPrice;
+    finalValueResult.innerText = "$ " + finalPriceFixed;
 }
