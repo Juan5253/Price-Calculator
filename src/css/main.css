@@ -104,7 +104,6 @@ html
     grid-template-columns: 1fr 2fr;
     background-color: rgba(49, 49, 49, 0.15);
     box-shadow: 8px 11px 10px -6px rgba(0,0,0,0.94);
-    box-shadow: 8px 11px 10px -6px rgba(0,0,0,0.94);
     border-radius: 1rem;
     padding: 1rem 2rem;
     margin: 0 2rem 1rem 2rem;
@@ -122,4 +121,21 @@ html
     padding-left: 1rem;
     max-width: 4rem;
     max-height: 4rem;
+}
+.main__footer .main__footer_coupons
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 3.8rem;
+}
+.main__footer_coupons
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 8px 11px 10px -6px rgba(0,0,0,0.94);
+    padding: 0.3rem;
+    color: #4A4A48;
+    background-color: #fdfdfa7e;
+    border-radius: 1rem;
 }
